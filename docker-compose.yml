@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: lojapix-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: lojapix
+      POSTGRES_PASSWORD: lojapix
+      POSTGRES_DB: lojapix
+    ports:
+      - "5435:5432"
+    volumes:
+      - lojapix-pg-data:/var/lib/postgresql/data
+
+volumes:
+  lojapix-pg-data:
