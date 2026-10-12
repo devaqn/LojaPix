@@ -155,7 +155,7 @@ npm run dev              # api :4500, web :4600
 npm test
 ```
 
-30 testes cobrindo: EMV/CRC16 do Pix (contra vetor de teste publicado), guarda de
+38 testes distribuídos em 7 suítes cobrindo: EMV/CRC16 do Pix (contra vetor de teste publicado), guarda de
 configuração (`PAYMENT_PROVIDER=mercadopago` sem token derruba a inicialização),
 catálogo (filtra categoria vazia, bloqueia produto em categoria inexistente),
 pedidos (endereço obrigatório na entrega, produto inexistente/indisponível, cálculo

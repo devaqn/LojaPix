@@ -38,11 +38,11 @@ jobs:
 
       - run: npm ci
 
+      - run: npm run db:generate --workspace=api
+
       - run: npm run lint
 
       - run: npm run typecheck
-
-      - run: npm run db:generate --workspace=api
 
       - run: npm test
 
